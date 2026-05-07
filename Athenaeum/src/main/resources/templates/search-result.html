@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Athenaeum</title>
+    <link rel="stylesheet" th:href="@{/static/css/style.css}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" th:href="@{/dashboard}"><i class="bi bi-book"></i> Athenaeum</a>
+            <div class="navbar-nav ms-auto">
+                <a class="btn btn-outline-light btn-sm" th:href="@{/auth/logout}">
+                    <i class="bi bi-box-arrow-right"></i> Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4><i class="bi bi-search"></i> Search Results</h4>
+                    <a th:href="@{/search}" class="btn btn-outline-primary">
+                        <i class="bi bi-arrow-left"></i> New Search
+                    </a>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p class="mb-0">
+                            <strong th:text="${resultCount}">0</strong> results found for 
+                            "<strong th:text="${query}"></strong>"
+                            <span th:if="${folder}" class="text-muted">in folder "<span th:text="${folder}"></span>"</span>
+                            <span th:if="${tag}" class="text-muted">with tag "<span th:text="${tag}"></span>"</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div th:if="${#lists.isEmpty(results)}" class="alert alert-info">
+                    <h5><i class="bi bi-info-circle"></i> No Results Found</h5>
+                    <p>Try adjusting your search terms or removing filters.</p>
+                    <ul>
+                        <li>Check spelling of keywords</li>
+                        <li>Use broader search terms</li>
+                        <li>Remove folder or tag filters</li>
+                        <li>Try searching for related concepts</li>
+                    </ul>
+                </div>
+
+                <div th:if="${!#lists.isEmpty(results)}">
+                    <div class="list-group">
+                        <div class="list-group-item" th:each="result : ${results}">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">
+                                    <a th:href="@{/{type}s/{id}(type=${result.type},id=${result.id})}" 
+                                       th:text="${result.title}"></a>
+                                    <span class="badge ms-2" 
+                                          th:classappend="${result.type == 'document'} ? 'bg-primary' : 'bg-success'"
+                                          th:text="${result.type == 'document'} ? 'Document' : 'Note'"></span>
+                                </h5>
+                                <small th:text="${#temporals.format(result.updatedAt, 'MMM dd, yyyy')}"></small>
+                            </div>
+
+                            <p class="mb-2 text-muted" th:text="${result.content}" th:if="${result.content}"></p>
+
+                            <div class="mb-2" th:if="${result.summary}">
+                                <small><strong>Summary:</strong> <span th:text="${result.summary}"></span></small>
+                            </div>
+
+                            <div class="mb-2" th:if="${result.keywords and !#lists.isEmpty(result.keywords)}">
+                                <small><strong>Keywords:</strong></small>
+                                <span th:each="keyword : ${result.keywords}" class="badge bg-light text-dark ms-1" 
+                                      th:text="${keyword}"></span>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span th:if="${result.folder}" class="badge bg-secondary" th:text="${result.folder}"></span>
+                                    <span th:if="${result.fileName}" class="badge bg-info" th:text="${result.fileType}"></span>
+                                </div>
+                                <div class="btn-group" role="group">
+                                    <a th:href="@{/{type}s/{id}(type=${result.type},id=${result.id})}" 
+                                       class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-eye"></i> View
+                                    </a>
+                                    <a th:if="${result.type == 'document'}" 
+                                       th:href="@{/documents/{id}/download(id=${result.id})}" 
+                                       class="btn btn-sm btn-outline-secondary">
+                                        <i class="bi bi-download"></i> Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

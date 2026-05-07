@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Document - Athenaeum</title>
+    <link rel="stylesheet" th:href="@{/static/css/style.css}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" th:href="@{/dashboard}"><i class="bi bi-book"></i> Athenaeum</a>
+            <div class="navbar-nav ms-auto">
+                <a class="btn btn-outline-light btn-sm" th:href="@{/auth/logout}">
+                    <i class="bi bi-box-arrow-right"></i> Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h4><i class="bi bi-cloud-upload"></i> Upload Document</h4>
+                        <p class="mb-0 text-muted">Upload PDF, Word documents, or text files</p>
+                    </div>
+                    <div class="card-body">
+                        <div th:if="${error}" class="alert alert-danger" role="alert">
+                            <span th:text="${error}"></span>
+                        </div>
+
+                        <div th:if="${success}" class="alert alert-success" role="alert">
+                            <span th:text="${success}"></span>
+                        </div>
+
+                        <form method="post" th:action="@{/documents/upload}" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="file" class="form-label">Select File</label>
+                                <input type="file" class="form-control" id="file" name="file" 
+                                       accept=".pdf,.doc,.docx,.txt,.rtf" required>
+                                <div class="form-text">Supported formats: PDF, DOC, DOCX, TXT, RTF (Max: 50MB)</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="title" class="form-label">Document Title (Optional)</label>
+                                <input type="text" class="form-control" id="title" name="title" 
+                                       placeholder="Leave empty to use filename">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="folder" class="form-label">Folder</label>
+                                <input type="text" class="form-control" id="folder" name="folder" 
+                                       placeholder="Enter folder name or leave empty" list="folderList">
+                                <datalist id="folderList">
+                                    <option th:each="folderName : ${folders}" th:value="${folderName}"></option>
+                                </datalist>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="tags" class="form-label">Tags (Optional)</label>
+                                <input type="text" class="form-control" id="tags" name="tags" 
+                                       placeholder="Enter tags separated by commas (e.g., research, academic, important)">
+                                <div class="form-text">Use tags to categorize and find your documents easily</div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <a th:href="@{/dashboard}" class="btn btn-secondary">
+                                    <i class="bi bi-arrow-left"></i> Back to Dashboard
+                                </a>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-cloud-upload"></i> Upload Document
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Convert tags input to array format
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const tagsInput = document.getElementById('tags');
+            if (tagsInput.value) {
+                const tags = tagsInput.value.split(',').map(tag => tag.trim()).filter(tag => tag);
+                // Create hidden inputs for each tag
+                tags.forEach(tag => {
+                    const hiddenInput = document.createElement('input');
+                    hiddenInput.type = 'hidden';
+                    hiddenInput.name = 'tags';
+                    hiddenInput.value = tag;
+                    this.appendChild(hiddenInput);
+                });
+                tagsInput.name = ''; // Disable original input
+            }
+        });
+    </script>
+</body>
+</html>

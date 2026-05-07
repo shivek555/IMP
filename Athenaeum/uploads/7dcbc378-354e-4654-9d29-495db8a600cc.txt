@@ -1,0 +1,4 @@
+Spring Boot Framework Tutorial
+Spring Boot is a Java framework that simplifies web development. 
+It provides auto-configuration, embedded servers, and production-ready features.
+Keywords: java, spring, boot, web, framework, tutorial, configuration, server

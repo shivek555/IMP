@@ -1,0 +1,146 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
+using System.Net.Mail;
+using Emgu.CV;
+using Emgu.CV.CvEnum;
+using Emgu.CV.Structure;
+using Emgu.CV.Face;
+using ZXing;
+using OfficeOpenXml;
+
+namespace FaceRecognitionSystem
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            FaceRecognitionSystem faceRecognitionSystem = new FaceRecognitionSystem();
+            faceRecognitionSystem.Start();
+        }
+    }
+
+    class FaceRecognitionSystem
+    {
+        private Dictionary<string, string> teacherFaces;
+        private Dictionary<string, string> studentIDs;
+        private FaceRecognizer faceRecognizer;
+        private VideoCapture capture;
+
+        public void Start()
+        {
+            InitializeTeacherFaces();
+            InitializeStudentIDs();
+            faceRecognizer = new EigenFaceRecognizer();
+            capture = new VideoCapture();
+            RecognizeFaces();
+        }
+
+        private void InitializeTeacherFaces()
+        {
+            teacherFaces = new Dictionary<string, string>();
+            // Add teacher faces with their names
+            // Example: teacherFaces.Add("John Doe", "encoded_face_data");
+        }
+
+        private void InitializeStudentIDs()
+        {
+            studentIDs = new Dictionary<string, string>();
+            // Add student IDs with their roll numbers
+            // Example: studentIDs.Add("barcode_data", "roll_number");
+        }
+
+      private string RecognizeTeacher(Mat face)
+{
+    // Example implementation: Assume direct comparison with a known teacher's face
+    // You would typically use a face recognition algorithm here
+
+    // Iterate through known teacher faces
+    foreach (var teacher in teacherFaces)
+    {
+        // Convert teacher's encoded face data to Mat
+        Mat encodedFaceData = new Mat(1, teacher.Value.Length, DepthType.Cv64F, 1);
+        encodedFaceData.SetTo<byte>(Encoding.UTF8.GetBytes(teacher.Value));
+
+        // Perform face recognition
+        double distance = faceRecognizer.Predict(face);
+        if (distance < 0.5) // Adjust threshold as needed
+        {
+            return teacher.Key; // Return the name of the recognized teacher
+        }
+    }
+
+    // If no teacher is recognized, return null
+    return null;
+}
+
+        private void MarkAttendance(string personName)
+{
+    // Example implementation: Log attendance to console
+    Console.WriteLine($"Attendance marked for: {personName} at {DateTime.Now}");
+
+    // You can implement further logic here, such as recording attendance to a file or database.
+}
+
+
+
+
+        public void SendAttendanceSheet()
+        {
+            string fileName = $"{DateTime.Now.ToString("yyyyMMddHHmmss")}_Attendance.xlsx";
+            CreateExcelSheet(fileName);
+            SendEmail(fileName);
+        }
+
+        private void CreateExcelSheet(string fileName, Dictionary<string, DateTime> attendanceData)
+{
+    // Create a new Excel package
+    using (ExcelPackage excelPackage = new ExcelPackage())
+    {
+        // Add a new worksheet
+        ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets.Add("Attendance");
+
+        // Set headers
+        worksheet.Cells[1, 1].Value = "Name";
+        worksheet.Cells[1, 2].Value = "Time";
+
+        // Fill data
+        int row = 2;
+        foreach (var entry in attendanceData)
+        {
+            worksheet.Cells[row, 1].Value = entry.Key; // Name
+            worksheet.Cells[row, 2].Value = entry.Value.ToString("yyyy-MM-dd HH:mm:ss"); // Time
+            row++;
+        }
+
+        // Auto-fit columns
+        worksheet.Cells.AutoFitColumns();
+
+        // Save the Excel file
+        FileInfo excelFile = new FileInfo(fileName);
+        excelPackage.SaveAs(excelFile);
+    }
+}
+
+        private void SendEmail(string fileName)
+        {
+            SmtpClient client = new SmtpClient("smtp.example.com")
+            {
+                Port = 587,
+                Credentials = new NetworkCredential("username", "password"),
+                EnableSsl = true,
+            };
+
+            MailMessage mail = new MailMessage("from@example.com", "to@example.com")
+            {
+                Subject = "Attendance Sheet",
+                Body = "Please find the attached attendance sheet.",
+            };
+
+            mail.Attachments.Add(new Attachment(fileName));
+
+            client.Send(mail);
+        }
+    }
+}

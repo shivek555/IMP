@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bd19a340a5a8855cca1e463487fd5338 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bd19a340a5a8855cca1e463487fd5338" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bd19a340a5a8855cca1e463487fd5338 = L.map(
+                "map_bd19a340a5a8855cca1e463487fd5338",
+                {
+                    center: [30.516363782063365, 76.65999237672537],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_af2e2ed418b3dd4d6808692ac5eac65d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_f96bb7b1e64467acaaf94bcf13998cc1 = L.marker(
+                [30.635838154196964, 76.46018345564353],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_0907f96b5f62527132c03d9d20bc1967 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f96bb7b1e64467acaaf94bcf13998cc1.setIcon(icon_0907f96b5f62527132c03d9d20bc1967);
+        
+    
+        var popup_1a575ab48356a3828e07d4ab40939577 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_096e907b5c41c62569f36ac8190342c4 = $(`<div id="html_096e907b5c41c62569f36ac8190342c4" style="width: 100.0%; height: 100.0%;">Stop in Cluster 1</div>`)[0];
+                popup_1a575ab48356a3828e07d4ab40939577.setContent(html_096e907b5c41c62569f36ac8190342c4);
+            
+        
+
+        marker_f96bb7b1e64467acaaf94bcf13998cc1.bindPopup(popup_1a575ab48356a3828e07d4ab40939577)
+        ;
+
+        
+    
+    
+            var marker_5e8c62d48d1d828277766ccc0af5f05b = L.marker(
+                [30.606578355555314, 76.43147523874704],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_4a652654791440bd2341ad7ddf76f7a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e8c62d48d1d828277766ccc0af5f05b.setIcon(icon_4a652654791440bd2341ad7ddf76f7a5);
+        
+    
+        var popup_0b0de4f83a51bb39415d3bda6d2a172c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4a381fe5cd00ff25351ab5cd606a4d4 = $(`<div id="html_e4a381fe5cd00ff25351ab5cd606a4d4" style="width: 100.0%; height: 100.0%;">Stop in Cluster 1</div>`)[0];
+                popup_0b0de4f83a51bb39415d3bda6d2a172c.setContent(html_e4a381fe5cd00ff25351ab5cd606a4d4);
+            
+        
+
+        marker_5e8c62d48d1d828277766ccc0af5f05b.bindPopup(popup_0b0de4f83a51bb39415d3bda6d2a172c)
+        ;
+
+        
+    
+    
+            var marker_2c5dfbcd47729d92de5b77a53ad76fda = L.marker(
+                [30.585545169439992, 76.33598262110398],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_e5b439ecefc30c0e9a87f5c9a5f73b7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c5dfbcd47729d92de5b77a53ad76fda.setIcon(icon_e5b439ecefc30c0e9a87f5c9a5f73b7d);
+        
+    
+        var popup_02584db9c582a8fe5917e6843139e59e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69fac1d7df8174779d7dbe4e9f7ef962 = $(`<div id="html_69fac1d7df8174779d7dbe4e9f7ef962" style="width: 100.0%; height: 100.0%;">Stop in Cluster 1</div>`)[0];
+                popup_02584db9c582a8fe5917e6843139e59e.setContent(html_69fac1d7df8174779d7dbe4e9f7ef962);
+            
+        
+
+        marker_2c5dfbcd47729d92de5b77a53ad76fda.bindPopup(popup_02584db9c582a8fe5917e6843139e59e)
+        ;
+
+        
+    
+    
+            var marker_dc18ead4764e3ce818a52e10c2885d17 = L.marker(
+                [30.59454605423448, 76.39459023190646],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_48028873b18294831c156d40b956458e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dc18ead4764e3ce818a52e10c2885d17.setIcon(icon_48028873b18294831c156d40b956458e);
+        
+    
+        var popup_1a6fa7af147bf7b804f51fb4ba38bafb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d3e84e292b967eb37a19c683d44422a = $(`<div id="html_3d3e84e292b967eb37a19c683d44422a" style="width: 100.0%; height: 100.0%;">Stop in Cluster 1</div>`)[0];
+                popup_1a6fa7af147bf7b804f51fb4ba38bafb.setContent(html_3d3e84e292b967eb37a19c683d44422a);
+            
+        
+
+        marker_dc18ead4764e3ce818a52e10c2885d17.bindPopup(popup_1a6fa7af147bf7b804f51fb4ba38bafb)
+        ;
+
+        
+    
+    
+            var poly_line_fd89a7721684f0bfd68e2cc94867e1e2 = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.635838154196964, 76.46018345564353], [30.606578355555314, 76.43147523874704], [30.59454605423448, 76.39459023190646], [30.585545169439992, 76.33598262110398]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_ef6d8e79ce2d69c11ae816e42c2a891b = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_05264c8e89046512a801557a78ea73b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ef6d8e79ce2d69c11ae816e42c2a891b.setIcon(icon_05264c8e89046512a801557a78ea73b2);
+        
+    
+        var popup_ebff51ec596d281b9a35d160b85177be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e8c67e5a613be25523f90efae511861 = $(`<div id="html_7e8c67e5a613be25523f90efae511861" style="width: 100.0%; height: 100.0%;">Cluster 1 Cost: 689.86 units</div>`)[0];
+                popup_ebff51ec596d281b9a35d160b85177be.setContent(html_7e8c67e5a613be25523f90efae511861);
+            
+        
+
+        marker_ef6d8e79ce2d69c11ae816e42c2a891b.bindPopup(popup_ebff51ec596d281b9a35d160b85177be)
+        ;
+
+        
+    
+    
+            var marker_1903ee9b5d1480ab58d592a3c42a1b28 = L.marker(
+                [30.518435310533693, 76.61091412226277],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_b840923acef699b264d559c952fc0fcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1903ee9b5d1480ab58d592a3c42a1b28.setIcon(icon_b840923acef699b264d559c952fc0fcd);
+        
+    
+        var popup_77c7cba78647c5117450cea2be468e82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8aeafb3d1d362ee44fedffe45bf74f91 = $(`<div id="html_8aeafb3d1d362ee44fedffe45bf74f91" style="width: 100.0%; height: 100.0%;">Stop in Cluster 2</div>`)[0];
+                popup_77c7cba78647c5117450cea2be468e82.setContent(html_8aeafb3d1d362ee44fedffe45bf74f91);
+            
+        
+
+        marker_1903ee9b5d1480ab58d592a3c42a1b28.bindPopup(popup_77c7cba78647c5117450cea2be468e82)
+        ;
+
+        
+    
+    
+            var marker_de0620429a283607ea2da72bd71be7b6 = L.marker(
+                [30.494476925167763, 76.56779621691359],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_b5a560b6d8fa82f210e7015143a548e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_de0620429a283607ea2da72bd71be7b6.setIcon(icon_b5a560b6d8fa82f210e7015143a548e5);
+        
+    
+        var popup_3cdd43764aa28ede9c92a5c74c37e02b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc099c97e0aeffa5e676d9c2e674e5f3 = $(`<div id="html_bc099c97e0aeffa5e676d9c2e674e5f3" style="width: 100.0%; height: 100.0%;">Stop in Cluster 2</div>`)[0];
+                popup_3cdd43764aa28ede9c92a5c74c37e02b.setContent(html_bc099c97e0aeffa5e676d9c2e674e5f3);
+            
+        
+
+        marker_de0620429a283607ea2da72bd71be7b6.bindPopup(popup_3cdd43764aa28ede9c92a5c74c37e02b)
+        ;
+
+        
+    
+    
+            var marker_546c1c4f3553095b6be905fd72680f8e = L.marker(
+                [30.488195104115754, 76.5428469284672],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_3e8b54411bdc908109b8ac8aab3dc620 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_546c1c4f3553095b6be905fd72680f8e.setIcon(icon_3e8b54411bdc908109b8ac8aab3dc620);
+        
+    
+        var popup_5c6c244338df1b510b274a0523febb98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7aedd6bc117580c70d4d4fdc1ccf35c9 = $(`<div id="html_7aedd6bc117580c70d4d4fdc1ccf35c9" style="width: 100.0%; height: 100.0%;">Stop in Cluster 2</div>`)[0];
+                popup_5c6c244338df1b510b274a0523febb98.setContent(html_7aedd6bc117580c70d4d4fdc1ccf35c9);
+            
+        
+
+        marker_546c1c4f3553095b6be905fd72680f8e.bindPopup(popup_5c6c244338df1b510b274a0523febb98)
+        ;
+
+        
+    
+    
+            var marker_15df75662760df4c0e04a67791521a9a = L.marker(
+                [30.496104151626756, 76.68094229384637],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_92f27d8f1158b25d9a1cb75bdfd4f3aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_15df75662760df4c0e04a67791521a9a.setIcon(icon_92f27d8f1158b25d9a1cb75bdfd4f3aa);
+        
+    
+        var popup_fa91178e15357791ff1499617efc473f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3571a54b815cd75c3f77c5e6d463e92 = $(`<div id="html_a3571a54b815cd75c3f77c5e6d463e92" style="width: 100.0%; height: 100.0%;">Stop in Cluster 2</div>`)[0];
+                popup_fa91178e15357791ff1499617efc473f.setContent(html_a3571a54b815cd75c3f77c5e6d463e92);
+            
+        
+
+        marker_15df75662760df4c0e04a67791521a9a.bindPopup(popup_fa91178e15357791ff1499617efc473f)
+        ;
+
+        
+    
+    
+            var marker_3d08221ea568b5c67d00ced9ee89904c = L.marker(
+                [30.521980255703546, 76.62523166192727],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_bd6f6960508b06f1990fd44101341e72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d08221ea568b5c67d00ced9ee89904c.setIcon(icon_bd6f6960508b06f1990fd44101341e72);
+        
+    
+        var popup_0fca105865d76314f523b700a9cfb833 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dd6369da3a5395972a931971a865b4e = $(`<div id="html_2dd6369da3a5395972a931971a865b4e" style="width: 100.0%; height: 100.0%;">Stop in Cluster 2</div>`)[0];
+                popup_0fca105865d76314f523b700a9cfb833.setContent(html_2dd6369da3a5395972a931971a865b4e);
+            
+        
+
+        marker_3d08221ea568b5c67d00ced9ee89904c.bindPopup(popup_0fca105865d76314f523b700a9cfb833)
+        ;
+
+        
+    
+    
+            var poly_line_da11ede3f47455988c07d2f47ca6f311 = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.496104151626756, 76.68094229384637], [30.488195104115754, 76.5428469284672], [30.494476925167763, 76.56779621691359], [30.518435310533693, 76.61091412226277], [30.521980255703546, 76.62523166192727]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_360d0277d7dccdb42cfd904007784c5f = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_0a6f37cc15544e6a0ce5781e77672762 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_360d0277d7dccdb42cfd904007784c5f.setIcon(icon_0a6f37cc15544e6a0ce5781e77672762);
+        
+    
+        var popup_5cbef8c53cecbe74d98abd2e2371d31c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_136ce4045e704cc6e5fe18794efc168d = $(`<div id="html_136ce4045e704cc6e5fe18794efc168d" style="width: 100.0%; height: 100.0%;">Cluster 2 Cost: 284.96 units</div>`)[0];
+                popup_5cbef8c53cecbe74d98abd2e2371d31c.setContent(html_136ce4045e704cc6e5fe18794efc168d);
+            
+        
+
+        marker_360d0277d7dccdb42cfd904007784c5f.bindPopup(popup_5cbef8c53cecbe74d98abd2e2371d31c)
+        ;
+
+        
+    
+    
+            var marker_2468ffe2fa453f8e7339a35891c76e0e = L.marker(
+                [30.297799071977064, 76.47478553750516],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_bba69468577dacbfb60d9d218863e74a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2468ffe2fa453f8e7339a35891c76e0e.setIcon(icon_bba69468577dacbfb60d9d218863e74a);
+        
+    
+        var popup_4791606aabdf657ff18ea7ee0d39fc66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c329e6c41cd9e7f9cb1f0350c5486830 = $(`<div id="html_c329e6c41cd9e7f9cb1f0350c5486830" style="width: 100.0%; height: 100.0%;">Stop in Cluster 3</div>`)[0];
+                popup_4791606aabdf657ff18ea7ee0d39fc66.setContent(html_c329e6c41cd9e7f9cb1f0350c5486830);
+            
+        
+
+        marker_2468ffe2fa453f8e7339a35891c76e0e.bindPopup(popup_4791606aabdf657ff18ea7ee0d39fc66)
+        ;
+
+        
+    
+    
+            var marker_cdd2974cd4abd3f36d6603f831d727a5 = L.marker(
+                [30.32521486861758, 76.48669166040985],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_f9df6dbb6e7b618631496c622d3cc32c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cdd2974cd4abd3f36d6603f831d727a5.setIcon(icon_f9df6dbb6e7b618631496c622d3cc32c);
+        
+    
+        var popup_62083627c2f0ed78d2f485838b88f16c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3eb05b5531aa44d54c05f9150017058e = $(`<div id="html_3eb05b5531aa44d54c05f9150017058e" style="width: 100.0%; height: 100.0%;">Stop in Cluster 3</div>`)[0];
+                popup_62083627c2f0ed78d2f485838b88f16c.setContent(html_3eb05b5531aa44d54c05f9150017058e);
+            
+        
+
+        marker_cdd2974cd4abd3f36d6603f831d727a5.bindPopup(popup_62083627c2f0ed78d2f485838b88f16c)
+        ;
+
+        
+    
+    
+            var marker_844b5d67ac521c49bbb424b91453e533 = L.marker(
+                [30.257375476551335, 76.46438594619896],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_bc8746751f0c3bbf2e2383736f14da04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_844b5d67ac521c49bbb424b91453e533.setIcon(icon_bc8746751f0c3bbf2e2383736f14da04);
+        
+    
+        var popup_d0762d51fbd1b71060ce3fe9f3ef02f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c045ad07de21f71bc1f2b4af33b7c7ee = $(`<div id="html_c045ad07de21f71bc1f2b4af33b7c7ee" style="width: 100.0%; height: 100.0%;">Stop in Cluster 3</div>`)[0];
+                popup_d0762d51fbd1b71060ce3fe9f3ef02f0.setContent(html_c045ad07de21f71bc1f2b4af33b7c7ee);
+            
+        
+
+        marker_844b5d67ac521c49bbb424b91453e533.bindPopup(popup_d0762d51fbd1b71060ce3fe9f3ef02f0)
+        ;
+
+        
+    
+    
+            var marker_019ea4746725b3376e7f6b1b642d9e25 = L.marker(
+                [30.26499748668674, 76.5562531916344],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_0ed3fae666fff5f28ef8745b74149524 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_019ea4746725b3376e7f6b1b642d9e25.setIcon(icon_0ed3fae666fff5f28ef8745b74149524);
+        
+    
+        var popup_fd274a2edea95d7a0c94f4f936b33e94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_706af7d7c16a2aa1e413855d7cfcbe29 = $(`<div id="html_706af7d7c16a2aa1e413855d7cfcbe29" style="width: 100.0%; height: 100.0%;">Stop in Cluster 3</div>`)[0];
+                popup_fd274a2edea95d7a0c94f4f936b33e94.setContent(html_706af7d7c16a2aa1e413855d7cfcbe29);
+            
+        
+
+        marker_019ea4746725b3376e7f6b1b642d9e25.bindPopup(popup_fd274a2edea95d7a0c94f4f936b33e94)
+        ;
+
+        
+    
+    
+            var marker_881c897ab2d485826105053b242a47ed = L.marker(
+                [30.363038338077427, 76.48771727186742],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_03959438eda0c780abd91c8a4fc616b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_881c897ab2d485826105053b242a47ed.setIcon(icon_03959438eda0c780abd91c8a4fc616b6);
+        
+    
+        var popup_eaf997a93f5da7d4c50484a0c98d5220 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14f13cd347aa5d520d5ed8b5bd877874 = $(`<div id="html_14f13cd347aa5d520d5ed8b5bd877874" style="width: 100.0%; height: 100.0%;">Stop in Cluster 3</div>`)[0];
+                popup_eaf997a93f5da7d4c50484a0c98d5220.setContent(html_14f13cd347aa5d520d5ed8b5bd877874);
+            
+        
+
+        marker_881c897ab2d485826105053b242a47ed.bindPopup(popup_eaf997a93f5da7d4c50484a0c98d5220)
+        ;
+
+        
+    
+    
+            var poly_line_8bd03e31430f2c7e8a2d1a9e1f9cd959 = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.363038338077427, 76.48771727186742], [30.32521486861758, 76.48669166040985], [30.297799071977064, 76.47478553750516], [30.257375476551335, 76.46438594619896], [30.26499748668674, 76.5562531916344]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_1d41453fbba93688d1406e85f913332d = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_f75ca473835d6fa2e964ada199987986 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1d41453fbba93688d1406e85f913332d.setIcon(icon_f75ca473835d6fa2e964ada199987986);
+        
+    
+        var popup_26186857af9ab5ee491aff86fd822f42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed7110f2967951bd0b3d2fd16afabdbf = $(`<div id="html_ed7110f2967951bd0b3d2fd16afabdbf" style="width: 100.0%; height: 100.0%;">Cluster 3 Cost: 743.32 units</div>`)[0];
+                popup_26186857af9ab5ee491aff86fd822f42.setContent(html_ed7110f2967951bd0b3d2fd16afabdbf);
+            
+        
+
+        marker_1d41453fbba93688d1406e85f913332d.bindPopup(popup_26186857af9ab5ee491aff86fd822f42)
+        ;
+
+        
+    
+    
+            var marker_9c43ffd340b75685a1d35fe7826e37ad = L.marker(
+                [30.71234616190547, 76.78142317108806],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_6c9dd1501e79cf0d2af6a7c4c690d801 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9c43ffd340b75685a1d35fe7826e37ad.setIcon(icon_6c9dd1501e79cf0d2af6a7c4c690d801);
+        
+    
+        var popup_03dd616d3884641ed4691fe5c6f5bc5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd1ac30394bfa1cc5ee6a78797f6332f = $(`<div id="html_dd1ac30394bfa1cc5ee6a78797f6332f" style="width: 100.0%; height: 100.0%;">Stop in Cluster 4</div>`)[0];
+                popup_03dd616d3884641ed4691fe5c6f5bc5e.setContent(html_dd1ac30394bfa1cc5ee6a78797f6332f);
+            
+        
+
+        marker_9c43ffd340b75685a1d35fe7826e37ad.bindPopup(popup_03dd616d3884641ed4691fe5c6f5bc5e)
+        ;
+
+        
+    
+    
+            var marker_3179e8ae294f1dd6ca2aeaaac77e07d9 = L.marker(
+                [30.72710698601189, 76.82245947037701],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_7b80024478fbc3dac1a608223f496866 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3179e8ae294f1dd6ca2aeaaac77e07d9.setIcon(icon_7b80024478fbc3dac1a608223f496866);
+        
+    
+        var popup_c91381816fa168f0001899d44b915049 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f48a871deb3172805785c07aba8e2ce7 = $(`<div id="html_f48a871deb3172805785c07aba8e2ce7" style="width: 100.0%; height: 100.0%;">Stop in Cluster 4</div>`)[0];
+                popup_c91381816fa168f0001899d44b915049.setContent(html_f48a871deb3172805785c07aba8e2ce7);
+            
+        
+
+        marker_3179e8ae294f1dd6ca2aeaaac77e07d9.bindPopup(popup_c91381816fa168f0001899d44b915049)
+        ;
+
+        
+    
+    
+            var marker_9dd279b479569ef8db9546f10efe07fb = L.marker(
+                [30.73918460785038, 76.85420747214975],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_2254e906576453eafcf13a7801d95522 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9dd279b479569ef8db9546f10efe07fb.setIcon(icon_2254e906576453eafcf13a7801d95522);
+        
+    
+        var popup_f0795e4c2002311978c239ea33e690e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c6d191bebf1cd7306cb269ac262481e = $(`<div id="html_6c6d191bebf1cd7306cb269ac262481e" style="width: 100.0%; height: 100.0%;">Stop in Cluster 4</div>`)[0];
+                popup_f0795e4c2002311978c239ea33e690e4.setContent(html_6c6d191bebf1cd7306cb269ac262481e);
+            
+        
+
+        marker_9dd279b479569ef8db9546f10efe07fb.bindPopup(popup_f0795e4c2002311978c239ea33e690e4)
+        ;
+
+        
+    
+    
+            var marker_50e0d744e6d77c8c5712e24fb372a1ee = L.marker(
+                [30.79711280288673, 76.87059927568716],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_2beb892ada9e85d4adba00845d9a5d51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_50e0d744e6d77c8c5712e24fb372a1ee.setIcon(icon_2beb892ada9e85d4adba00845d9a5d51);
+        
+    
+        var popup_21076d32baf57e36086ff206e05725c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e4821a9cde7241a0164a1a0a1b44125 = $(`<div id="html_1e4821a9cde7241a0164a1a0a1b44125" style="width: 100.0%; height: 100.0%;">Stop in Cluster 4</div>`)[0];
+                popup_21076d32baf57e36086ff206e05725c0.setContent(html_1e4821a9cde7241a0164a1a0a1b44125);
+            
+        
+
+        marker_50e0d744e6d77c8c5712e24fb372a1ee.bindPopup(popup_21076d32baf57e36086ff206e05725c0)
+        ;
+
+        
+    
+    
+            var marker_8d97fbd19ce8ffc99dbb9fc79d618b2b = L.marker(
+                [30.732406567639135, 76.78662252389275],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_06f494007493c10b12460f7b425c3728 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8d97fbd19ce8ffc99dbb9fc79d618b2b.setIcon(icon_06f494007493c10b12460f7b425c3728);
+        
+    
+        var popup_cabcf6fb604e7ea0901b9f754447492c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d41b07b5c1776aae153701e6f52b3bdb = $(`<div id="html_d41b07b5c1776aae153701e6f52b3bdb" style="width: 100.0%; height: 100.0%;">Stop in Cluster 4</div>`)[0];
+                popup_cabcf6fb604e7ea0901b9f754447492c.setContent(html_d41b07b5c1776aae153701e6f52b3bdb);
+            
+        
+
+        marker_8d97fbd19ce8ffc99dbb9fc79d618b2b.bindPopup(popup_cabcf6fb604e7ea0901b9f754447492c)
+        ;
+
+        
+    
+    
+            var poly_line_15143bbc1d6d407e0ce5854be96dffb2 = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.71234616190547, 76.78142317108806], [30.732406567639135, 76.78662252389275], [30.79711280288673, 76.87059927568716], [30.73918460785038, 76.85420747214975], [30.72710698601189, 76.82245947037701]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_5995ce2281a9935d08826d98004bd673 = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_27dab3d4150fa30bc98caac968131f73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5995ce2281a9935d08826d98004bd673.setIcon(icon_27dab3d4150fa30bc98caac968131f73);
+        
+    
+        var popup_db2564ca7db7779560c1f6a1e58261d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3f3f9d5127b8e63985575be0a8f04c4 = $(`<div id="html_c3f3f9d5127b8e63985575be0a8f04c4" style="width: 100.0%; height: 100.0%;">Cluster 4 Cost: 758.25 units</div>`)[0];
+                popup_db2564ca7db7779560c1f6a1e58261d1.setContent(html_c3f3f9d5127b8e63985575be0a8f04c4);
+            
+        
+
+        marker_5995ce2281a9935d08826d98004bd673.bindPopup(popup_db2564ca7db7779560c1f6a1e58261d1)
+        ;
+
+        
+    
+    
+            var marker_de35e767bfe31e7276cb76ae5464fc6b = L.marker(
+                [30.36952464442572, 76.84691034052102],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_833e00fa30cc79c3090a65e861aa422e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_de35e767bfe31e7276cb76ae5464fc6b.setIcon(icon_833e00fa30cc79c3090a65e861aa422e);
+        
+    
+        var popup_2d386f2e04124fa6fc9c93ffd0a9ab30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1815db634e376a0f13e37f75b27f8ab8 = $(`<div id="html_1815db634e376a0f13e37f75b27f8ab8" style="width: 100.0%; height: 100.0%;">Stop in Cluster 5</div>`)[0];
+                popup_2d386f2e04124fa6fc9c93ffd0a9ab30.setContent(html_1815db634e376a0f13e37f75b27f8ab8);
+            
+        
+
+        marker_de35e767bfe31e7276cb76ae5464fc6b.bindPopup(popup_2d386f2e04124fa6fc9c93ffd0a9ab30)
+        ;
+
+        
+    
+    
+            var marker_d9be5cbf7a2e74d5a81439ae8fc24d7b = L.marker(
+                [30.379328963782545, 76.80438966245677],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_28f9d9c200fc7ed7a19c034a27314244 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d9be5cbf7a2e74d5a81439ae8fc24d7b.setIcon(icon_28f9d9c200fc7ed7a19c034a27314244);
+        
+    
+        var popup_a808612ec35a611d4e0bff4b28b961b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7752445f280732c30ee963c4932f93ab = $(`<div id="html_7752445f280732c30ee963c4932f93ab" style="width: 100.0%; height: 100.0%;">Stop in Cluster 5</div>`)[0];
+                popup_a808612ec35a611d4e0bff4b28b961b4.setContent(html_7752445f280732c30ee963c4932f93ab);
+            
+        
+
+        marker_d9be5cbf7a2e74d5a81439ae8fc24d7b.bindPopup(popup_a808612ec35a611d4e0bff4b28b961b4)
+        ;
+
+        
+    
+    
+            var poly_line_68f6b31bc0a83f284ee7ba72d0ec93cd = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.379328963782545, 76.80438966245677], [30.36952464442572, 76.84691034052102]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_22284398e830cfb4ee46cd4549223829 = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_0b22c0db066c59dd8b5277b791d0326c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_22284398e830cfb4ee46cd4549223829.setIcon(icon_0b22c0db066c59dd8b5277b791d0326c);
+        
+    
+        var popup_024b70dc8ae85cbefa74b5291eb02203 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_964a884cffa322e82eec58a53bee6a3e = $(`<div id="html_964a884cffa322e82eec58a53bee6a3e" style="width: 100.0%; height: 100.0%;">Cluster 5 Cost: 490.49 units</div>`)[0];
+                popup_024b70dc8ae85cbefa74b5291eb02203.setContent(html_964a884cffa322e82eec58a53bee6a3e);
+            
+        
+
+        marker_22284398e830cfb4ee46cd4549223829.bindPopup(popup_024b70dc8ae85cbefa74b5291eb02203)
+        ;
+
+        
+    
+    
+            var marker_9420ff511b0e40cfc224bb65e39dcad6 = L.marker(
+                [30.622868721000945, 76.50327119812889],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_0501c3b8856feb89d5229d425ce7345f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9420ff511b0e40cfc224bb65e39dcad6.setIcon(icon_0501c3b8856feb89d5229d425ce7345f);
+        
+    
+        var popup_70ef14ec0da62392c24639b60d68c852 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65358cfd4b8cbddbc5c4f3ec3d0acd63 = $(`<div id="html_65358cfd4b8cbddbc5c4f3ec3d0acd63" style="width: 100.0%; height: 100.0%;">Stop in Cluster 6</div>`)[0];
+                popup_70ef14ec0da62392c24639b60d68c852.setContent(html_65358cfd4b8cbddbc5c4f3ec3d0acd63);
+            
+        
+
+        marker_9420ff511b0e40cfc224bb65e39dcad6.bindPopup(popup_70ef14ec0da62392c24639b60d68c852)
+        ;
+
+        
+    
+    
+            var marker_d9eb68e5f546441be6668e27f510b8da = L.marker(
+                [30.689744443421446, 76.57327808195271],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_4e86a68cb0fef898c66494519fdf14e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d9eb68e5f546441be6668e27f510b8da.setIcon(icon_4e86a68cb0fef898c66494519fdf14e2);
+        
+    
+        var popup_4a01ad69a7182f0c74a38ec6d2920feb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_877fe513f9f12b93b07d7f14419782b5 = $(`<div id="html_877fe513f9f12b93b07d7f14419782b5" style="width: 100.0%; height: 100.0%;">Stop in Cluster 6</div>`)[0];
+                popup_4a01ad69a7182f0c74a38ec6d2920feb.setContent(html_877fe513f9f12b93b07d7f14419782b5);
+            
+        
+
+        marker_d9eb68e5f546441be6668e27f510b8da.bindPopup(popup_4a01ad69a7182f0c74a38ec6d2920feb)
+        ;
+
+        
+    
+    
+            var marker_efbfc5d76547b99cea9e1e9d65384874 = L.marker(
+                [30.698228497820548, 76.53366434792773],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_3494bdedd38a4ea24466d4dceb3b9440 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_efbfc5d76547b99cea9e1e9d65384874.setIcon(icon_3494bdedd38a4ea24466d4dceb3b9440);
+        
+    
+        var popup_55b0a53a9067bff57a767369c9b7cc27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afde232b2405f98b704dc45399717928 = $(`<div id="html_afde232b2405f98b704dc45399717928" style="width: 100.0%; height: 100.0%;">Stop in Cluster 6</div>`)[0];
+                popup_55b0a53a9067bff57a767369c9b7cc27.setContent(html_afde232b2405f98b704dc45399717928);
+            
+        
+
+        marker_efbfc5d76547b99cea9e1e9d65384874.bindPopup(popup_55b0a53a9067bff57a767369c9b7cc27)
+        ;
+
+        
+    
+    
+            var poly_line_e4ca51023bdcdee0bb5824198a6f8c9c = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.622868721000945, 76.50327119812889], [30.698228497820548, 76.53366434792773], [30.689744443421446, 76.57327808195271]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_cb473944501261e794b3b90042396ef6 = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_b0805710cf5e33f2c7565fd9ed531644 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cb473944501261e794b3b90042396ef6.setIcon(icon_b0805710cf5e33f2c7565fd9ed531644);
+        
+    
+        var popup_37f02b3b8f817ce32e967ed366ee1815 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fa2bbc24eb301436483d4d5ae05b301 = $(`<div id="html_6fa2bbc24eb301436483d4d5ae05b301" style="width: 100.0%; height: 100.0%;">Cluster 6 Cost: 528.76 units</div>`)[0];
+                popup_37f02b3b8f817ce32e967ed366ee1815.setContent(html_6fa2bbc24eb301436483d4d5ae05b301);
+            
+        
+
+        marker_cb473944501261e794b3b90042396ef6.bindPopup(popup_37f02b3b8f817ce32e967ed366ee1815)
+        ;
+
+        
+    
+    
+            var marker_4f57a1512bca91e347ae130d88b41b57 = L.marker(
+                [30.256485817159543, 76.67818781124998],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_0b7b66fd61626b5e9d2fbcb44409638d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4f57a1512bca91e347ae130d88b41b57.setIcon(icon_0b7b66fd61626b5e9d2fbcb44409638d);
+        
+    
+        var popup_afa50715b2549db3280b48a8f19709bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4704e440c45c404f9b2de76c4867c0d5 = $(`<div id="html_4704e440c45c404f9b2de76c4867c0d5" style="width: 100.0%; height: 100.0%;">Stop in Cluster 7</div>`)[0];
+                popup_afa50715b2549db3280b48a8f19709bf.setContent(html_4704e440c45c404f9b2de76c4867c0d5);
+            
+        
+
+        marker_4f57a1512bca91e347ae130d88b41b57.bindPopup(popup_afa50715b2549db3280b48a8f19709bf)
+        ;
+
+        
+    
+    
+            var marker_0fbc473f655af49afe102666029c5d53 = L.marker(
+                [30.21852479714207, 76.67853353557207],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_68262162a9b7b521a24efaaaba0feadb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0fbc473f655af49afe102666029c5d53.setIcon(icon_68262162a9b7b521a24efaaaba0feadb);
+        
+    
+        var popup_b856c4cf8283bb6fdbed03dfc3ff595c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ea3931926a64498389633ac1dd1b998 = $(`<div id="html_4ea3931926a64498389633ac1dd1b998" style="width: 100.0%; height: 100.0%;">Stop in Cluster 7</div>`)[0];
+                popup_b856c4cf8283bb6fdbed03dfc3ff595c.setContent(html_4ea3931926a64498389633ac1dd1b998);
+            
+        
+
+        marker_0fbc473f655af49afe102666029c5d53.bindPopup(popup_b856c4cf8283bb6fdbed03dfc3ff595c)
+        ;
+
+        
+    
+    
+            var poly_line_51b227f2fa18fe2a3f12ddfc4ddbd0d4 = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.256485817159543, 76.67818781124998], [30.21852479714207, 76.67853353557207]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_223af9b445a761c9bf7dcd9680b1d0c7 = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_98dc99d68ae8c002c3ac90676ce40676 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_223af9b445a761c9bf7dcd9680b1d0c7.setIcon(icon_98dc99d68ae8c002c3ac90676ce40676);
+        
+    
+        var popup_0fffa40412a2293c29079a65b879f156 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f472f9a256f52ca3f14f0be0310d0d3f = $(`<div id="html_f472f9a256f52ca3f14f0be0310d0d3f" style="width: 100.0%; height: 100.0%;">Cluster 7 Cost: 663.35 units</div>`)[0];
+                popup_0fffa40412a2293c29079a65b879f156.setContent(html_f472f9a256f52ca3f14f0be0310d0d3f);
+            
+        
+
+        marker_223af9b445a761c9bf7dcd9680b1d0c7.bindPopup(popup_0fffa40412a2293c29079a65b879f156)
+        ;
+
+        
+    
+    
+            var marker_6e9b02ae7acaa2924562afe03b272a60 = L.marker(
+                [30.432132006131525, 76.38625245959342],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_2f8ea4f4097feeebebdca89b22c3cbfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6e9b02ae7acaa2924562afe03b272a60.setIcon(icon_2f8ea4f4097feeebebdca89b22c3cbfb);
+        
+    
+        var popup_33a44149b16ac1ae3555b2ada99ac9a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_249866ffd30fd544d4200ab3497079dc = $(`<div id="html_249866ffd30fd544d4200ab3497079dc" style="width: 100.0%; height: 100.0%;">Stop in Cluster 8</div>`)[0];
+                popup_33a44149b16ac1ae3555b2ada99ac9a2.setContent(html_249866ffd30fd544d4200ab3497079dc);
+            
+        
+
+        marker_6e9b02ae7acaa2924562afe03b272a60.bindPopup(popup_33a44149b16ac1ae3555b2ada99ac9a2)
+        ;
+
+        
+    
+    
+            var marker_f8441715dada2ad032c713d573429c4e = L.marker(
+                [30.47118839539985, 76.32055151574686],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_f2a68709bb7b282c4d92cc8599107db7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f8441715dada2ad032c713d573429c4e.setIcon(icon_f2a68709bb7b282c4d92cc8599107db7);
+        
+    
+        var popup_fb97278784f16c4b146490f7bfe33f6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_207c5c62959b2e7e918e03c5e4b5579e = $(`<div id="html_207c5c62959b2e7e918e03c5e4b5579e" style="width: 100.0%; height: 100.0%;">Stop in Cluster 8</div>`)[0];
+                popup_fb97278784f16c4b146490f7bfe33f6d.setContent(html_207c5c62959b2e7e918e03c5e4b5579e);
+            
+        
+
+        marker_f8441715dada2ad032c713d573429c4e.bindPopup(popup_fb97278784f16c4b146490f7bfe33f6d)
+        ;
+
+        
+    
+    
+            var poly_line_705e2cccc8418c47719ae7ea530d93c7 = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.432132006131525, 76.38625245959342], [30.47118839539985, 76.32055151574686]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_ea32b47f1918a055f6e47e239df67bc7 = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_f227e1cd2490faddef929d6a67be0d91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ea32b47f1918a055f6e47e239df67bc7.setIcon(icon_f227e1cd2490faddef929d6a67be0d91);
+        
+    
+        var popup_b9bed9e36cc951c6be42d163143b88f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_512d761c22787ed1ddedf7ccb5f7f472 = $(`<div id="html_512d761c22787ed1ddedf7ccb5f7f472" style="width: 100.0%; height: 100.0%;">Cluster 8 Cost: 684.14 units</div>`)[0];
+                popup_b9bed9e36cc951c6be42d163143b88f5.setContent(html_512d761c22787ed1ddedf7ccb5f7f472);
+            
+        
+
+        marker_ea32b47f1918a055f6e47e239df67bc7.bindPopup(popup_b9bed9e36cc951c6be42d163143b88f5)
+        ;
+
+        
+    
+    
+            var marker_78a01df2fb3b8658a75c24d034dbc7b3 = L.marker(
+                [30.640668276496815, 76.6573592517461],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_81d812ae231956d1310bbde426556eb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_78a01df2fb3b8658a75c24d034dbc7b3.setIcon(icon_81d812ae231956d1310bbde426556eb0);
+        
+    
+        var popup_3abe68e61d0545d9e8b16b8f5f5c2087 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee3465acb13ecb3317cb33718d24e416 = $(`<div id="html_ee3465acb13ecb3317cb33718d24e416" style="width: 100.0%; height: 100.0%;">Stop in Cluster 9</div>`)[0];
+                popup_3abe68e61d0545d9e8b16b8f5f5c2087.setContent(html_ee3465acb13ecb3317cb33718d24e416);
+            
+        
+
+        marker_78a01df2fb3b8658a75c24d034dbc7b3.bindPopup(popup_3abe68e61d0545d9e8b16b8f5f5c2087)
+        ;
+
+        
+    
+    
+            var marker_d4f18e002fa548d0885764cdd306c6fd = L.marker(
+                [30.62946923260712, 76.64763690554926],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_d2ce0ca27256b3e45542b7e34eaec48d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d4f18e002fa548d0885764cdd306c6fd.setIcon(icon_d2ce0ca27256b3e45542b7e34eaec48d);
+        
+    
+        var popup_60ab60750e0e9fb5bf627b4a2447db70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ec946f968e2959d4997c54aa6807bcf = $(`<div id="html_7ec946f968e2959d4997c54aa6807bcf" style="width: 100.0%; height: 100.0%;">Stop in Cluster 9</div>`)[0];
+                popup_60ab60750e0e9fb5bf627b4a2447db70.setContent(html_7ec946f968e2959d4997c54aa6807bcf);
+            
+        
+
+        marker_d4f18e002fa548d0885764cdd306c6fd.bindPopup(popup_60ab60750e0e9fb5bf627b4a2447db70)
+        ;
+
+        
+    
+    
+            var marker_f37e16ee888067c802c4fdbfc640dc78 = L.marker(
+                [30.630597345782068, 76.65161806920125],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_1dc366cda1bcb9f6c5e334b54a0370bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f37e16ee888067c802c4fdbfc640dc78.setIcon(icon_1dc366cda1bcb9f6c5e334b54a0370bf);
+        
+    
+        var popup_36d7a60a82bc7c51f33dba79a8a4c784 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07c7d89f62ec83995f4b4b156da36c22 = $(`<div id="html_07c7d89f62ec83995f4b4b156da36c22" style="width: 100.0%; height: 100.0%;">Stop in Cluster 9</div>`)[0];
+                popup_36d7a60a82bc7c51f33dba79a8a4c784.setContent(html_07c7d89f62ec83995f4b4b156da36c22);
+            
+        
+
+        marker_f37e16ee888067c802c4fdbfc640dc78.bindPopup(popup_36d7a60a82bc7c51f33dba79a8a4c784)
+        ;
+
+        
+    
+    
+            var marker_78ebdef2b8b03bae61fd21f8a578846c = L.marker(
+                [30.640036476725196, 76.61389496131015],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_bd448493506f77ec74d0b5a6da3b7396 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_78ebdef2b8b03bae61fd21f8a578846c.setIcon(icon_bd448493506f77ec74d0b5a6da3b7396);
+        
+    
+        var popup_78389a9c73e4aeea5452754e95576bea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bf7a4ad591b196a3e4bb9278d17e380 = $(`<div id="html_0bf7a4ad591b196a3e4bb9278d17e380" style="width: 100.0%; height: 100.0%;">Stop in Cluster 9</div>`)[0];
+                popup_78389a9c73e4aeea5452754e95576bea.setContent(html_0bf7a4ad591b196a3e4bb9278d17e380);
+            
+        
+
+        marker_78ebdef2b8b03bae61fd21f8a578846c.bindPopup(popup_78389a9c73e4aeea5452754e95576bea)
+        ;
+
+        
+    
+    
+            var poly_line_57bd906f66de82ede278d81e62f21b1f = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.62946923260712, 76.64763690554926], [30.630597345782068, 76.65161806920125], [30.640668276496815, 76.6573592517461], [30.640036476725196, 76.61389496131015]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_307f1d1770cacfc9e25ea864224dca8f = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_f7d8aa5a64486ec48a222b3d4b5c2384 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_307f1d1770cacfc9e25ea864224dca8f.setIcon(icon_f7d8aa5a64486ec48a222b3d4b5c2384);
+        
+    
+        var popup_fe09aca64232624934484049b1243798 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e4b6c59916c7ab6427f21b4038011fc = $(`<div id="html_3e4b6c59916c7ab6427f21b4038011fc" style="width: 100.0%; height: 100.0%;">Cluster 9 Cost: 328.80 units</div>`)[0];
+                popup_fe09aca64232624934484049b1243798.setContent(html_3e4b6c59916c7ab6427f21b4038011fc);
+            
+        
+
+        marker_307f1d1770cacfc9e25ea864224dca8f.bindPopup(popup_fe09aca64232624934484049b1243798)
+        ;
+
+        
+    
+    
+            var marker_3b7f8725dfe65f90672f39b625ec658e = L.marker(
+                [30.21762050823276, 76.80279130081216],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_4de85fa8cee23760bbb59c3c0cd7a318 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3b7f8725dfe65f90672f39b625ec658e.setIcon(icon_4de85fa8cee23760bbb59c3c0cd7a318);
+        
+    
+        var popup_8f0853e3a3709b2392bd8f55a0eb8382 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29e96d64b1b291af40911bc3a8dff5a5 = $(`<div id="html_29e96d64b1b291af40911bc3a8dff5a5" style="width: 100.0%; height: 100.0%;">Stop in Cluster 10</div>`)[0];
+                popup_8f0853e3a3709b2392bd8f55a0eb8382.setContent(html_29e96d64b1b291af40911bc3a8dff5a5);
+            
+        
+
+        marker_3b7f8725dfe65f90672f39b625ec658e.bindPopup(popup_8f0853e3a3709b2392bd8f55a0eb8382)
+        ;
+
+        
+    
+    
+            var marker_ec82e0034a2cc90bfc7e9b6dbfa3a41f = L.marker(
+                [30.246627009422763, 76.80739806824558],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_0d31a4e430ac91b7088b3620d158815e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ec82e0034a2cc90bfc7e9b6dbfa3a41f.setIcon(icon_0d31a4e430ac91b7088b3620d158815e);
+        
+    
+        var popup_912c01ab049d102ae1cb3edc07eb019c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8b1230f5356bf1ce6e071f6bc6e56de = $(`<div id="html_c8b1230f5356bf1ce6e071f6bc6e56de" style="width: 100.0%; height: 100.0%;">Stop in Cluster 10</div>`)[0];
+                popup_912c01ab049d102ae1cb3edc07eb019c.setContent(html_c8b1230f5356bf1ce6e071f6bc6e56de);
+            
+        
+
+        marker_ec82e0034a2cc90bfc7e9b6dbfa3a41f.bindPopup(popup_912c01ab049d102ae1cb3edc07eb019c)
+        ;
+
+        
+    
+    
+            var poly_line_a97891848b03be38f89521b888896a8a = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.246627009422763, 76.80739806824558], [30.21762050823276, 76.80279130081216]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_4eeecf81d61082e93ab8aef4f7163b81 = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_368b3520b8afd6198249a32b9c156b98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4eeecf81d61082e93ab8aef4f7163b81.setIcon(icon_368b3520b8afd6198249a32b9c156b98);
+        
+    
+        var popup_f0a6dda2313dfddb78b385406c6da12f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31dca47cfe72cea8da1a022884da05b3 = $(`<div id="html_31dca47cfe72cea8da1a022884da05b3" style="width: 100.0%; height: 100.0%;">Cluster 10 Cost: 723.46 units</div>`)[0];
+                popup_f0a6dda2313dfddb78b385406c6da12f.setContent(html_31dca47cfe72cea8da1a022884da05b3);
+            
+        
+
+        marker_4eeecf81d61082e93ab8aef4f7163b81.bindPopup(popup_f0a6dda2313dfddb78b385406c6da12f)
+        ;
+
+        
+    
+    
+            var marker_8d1bbbf53e2fd26c41c454076d9d9061 = L.marker(
+                [30.78959893162341, 76.44336150835377],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_efa1c43b5f8fe2ca2944d00ac4e4b8c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8d1bbbf53e2fd26c41c454076d9d9061.setIcon(icon_efa1c43b5f8fe2ca2944d00ac4e4b8c0);
+        
+    
+        var popup_782b7d4eb10a0f7c4d6fca01e9a0109b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8274a786497cda2ea9080a7016d0c75c = $(`<div id="html_8274a786497cda2ea9080a7016d0c75c" style="width: 100.0%; height: 100.0%;">Stop in Cluster 11</div>`)[0];
+                popup_782b7d4eb10a0f7c4d6fca01e9a0109b.setContent(html_8274a786497cda2ea9080a7016d0c75c);
+            
+        
+
+        marker_8d1bbbf53e2fd26c41c454076d9d9061.bindPopup(popup_782b7d4eb10a0f7c4d6fca01e9a0109b)
+        ;
+
+        
+    
+    
+            var marker_b57438fa040a39cf62f57c70363cb772 = L.marker(
+                [30.696917386461962, 76.46951936969698],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_ba213753e3ebcf0eb6f43c2c91ad18cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b57438fa040a39cf62f57c70363cb772.setIcon(icon_ba213753e3ebcf0eb6f43c2c91ad18cb);
+        
+    
+        var popup_4ae7a5908a06526b5f778c9898a7dfff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98f8803deb303a6c2e6edba2051ee417 = $(`<div id="html_98f8803deb303a6c2e6edba2051ee417" style="width: 100.0%; height: 100.0%;">Stop in Cluster 11</div>`)[0];
+                popup_4ae7a5908a06526b5f778c9898a7dfff.setContent(html_98f8803deb303a6c2e6edba2051ee417);
+            
+        
+
+        marker_b57438fa040a39cf62f57c70363cb772.bindPopup(popup_4ae7a5908a06526b5f778c9898a7dfff)
+        ;
+
+        
+    
+    
+            var poly_line_3facda6ef9e18cbb3ec063d978cefc0a = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.696917386461962, 76.46951936969698], [30.78959893162341, 76.44336150835377]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_128a73bed5e382b6c47c0c134091409b = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_eded96982695613c3a0a9bd878e1eba1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_128a73bed5e382b6c47c0c134091409b.setIcon(icon_eded96982695613c3a0a9bd878e1eba1);
+        
+    
+        var popup_d2162fcefd4658806f808713f1f1f8e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2566c6b684210f91ef7d492e147110a = $(`<div id="html_c2566c6b684210f91ef7d492e147110a" style="width: 100.0%; height: 100.0%;">Cluster 11 Cost: 744.97 units</div>`)[0];
+                popup_d2162fcefd4658806f808713f1f1f8e6.setContent(html_c2566c6b684210f91ef7d492e147110a);
+            
+        
+
+        marker_128a73bed5e382b6c47c0c134091409b.bindPopup(popup_d2162fcefd4658806f808713f1f1f8e6)
+        ;
+
+        
+    
+    
+            var marker_ead90fd23eff008f5f0847a7130e93b7 = L.marker(
+                [30.64625658357806, 76.33798473042367],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_f054dd91f48fb1ec7e336316bb98e8a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ead90fd23eff008f5f0847a7130e93b7.setIcon(icon_f054dd91f48fb1ec7e336316bb98e8a4);
+        
+    
+        var popup_4f7bb8a04c97bea5d922bd7505465af3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c33dc2cd98195a703cf3f01dc09fca93 = $(`<div id="html_c33dc2cd98195a703cf3f01dc09fca93" style="width: 100.0%; height: 100.0%;">Stop in Cluster 12</div>`)[0];
+                popup_4f7bb8a04c97bea5d922bd7505465af3.setContent(html_c33dc2cd98195a703cf3f01dc09fca93);
+            
+        
+
+        marker_ead90fd23eff008f5f0847a7130e93b7.bindPopup(popup_4f7bb8a04c97bea5d922bd7505465af3)
+        ;
+
+        
+    
+    
+            var marker_b709e699e67ec3af18e56c2eafcb2762 = L.marker(
+                [30.721095429421062, 76.33209662239008],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_a6d602a04b4df7cff34f3538f2d8e01a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b709e699e67ec3af18e56c2eafcb2762.setIcon(icon_a6d602a04b4df7cff34f3538f2d8e01a);
+        
+    
+        var popup_fdc3ef584fb1cd1bd14304d9d0214e14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48f45fb369ec119e4ae8b91662dffd84 = $(`<div id="html_48f45fb369ec119e4ae8b91662dffd84" style="width: 100.0%; height: 100.0%;">Stop in Cluster 12</div>`)[0];
+                popup_fdc3ef584fb1cd1bd14304d9d0214e14.setContent(html_48f45fb369ec119e4ae8b91662dffd84);
+            
+        
+
+        marker_b709e699e67ec3af18e56c2eafcb2762.bindPopup(popup_fdc3ef584fb1cd1bd14304d9d0214e14)
+        ;
+
+        
+    
+    
+            var marker_b21fdd7989f8f7724f75cd514aa06fcb = L.marker(
+                [30.639870127482396, 76.33262585590094],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_bd642e958c3723a52b2d77d1eb1e7432 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b21fdd7989f8f7724f75cd514aa06fcb.setIcon(icon_bd642e958c3723a52b2d77d1eb1e7432);
+        
+    
+        var popup_9db72cd304ad448b5a46dfb29baccbda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9565242e57663ac7ba1218e8fff1ebc6 = $(`<div id="html_9565242e57663ac7ba1218e8fff1ebc6" style="width: 100.0%; height: 100.0%;">Stop in Cluster 12</div>`)[0];
+                popup_9db72cd304ad448b5a46dfb29baccbda.setContent(html_9565242e57663ac7ba1218e8fff1ebc6);
+            
+        
+
+        marker_b21fdd7989f8f7724f75cd514aa06fcb.bindPopup(popup_9db72cd304ad448b5a46dfb29baccbda)
+        ;
+
+        
+    
+    
+            var marker_84b42a0575e5a962949d0be3d92bd3e9 = L.marker(
+                [30.70308833753974, 76.31488231966131],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_f559bdd7bb6dc7180cf2d7410a63fb2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_84b42a0575e5a962949d0be3d92bd3e9.setIcon(icon_f559bdd7bb6dc7180cf2d7410a63fb2f);
+        
+    
+        var popup_053443318b02e627023790499284697c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebc17a1340c9d0fd24b875389a4bac3c = $(`<div id="html_ebc17a1340c9d0fd24b875389a4bac3c" style="width: 100.0%; height: 100.0%;">Stop in Cluster 12</div>`)[0];
+                popup_053443318b02e627023790499284697c.setContent(html_ebc17a1340c9d0fd24b875389a4bac3c);
+            
+        
+
+        marker_84b42a0575e5a962949d0be3d92bd3e9.bindPopup(popup_053443318b02e627023790499284697c)
+        ;
+
+        
+    
+    
+            var poly_line_9121c9e029f0aee83f792ee595c0c298 = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.639870127482396, 76.33262585590094], [30.64625658357806, 76.33798473042367], [30.70308833753974, 76.31488231966131], [30.721095429421062, 76.33209662239008]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_fd4260ebb06f985b5d31c8673356fd13 = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_8aec9caeab6765fe6da7dd4d06641a39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd4260ebb06f985b5d31c8673356fd13.setIcon(icon_8aec9caeab6765fe6da7dd4d06641a39);
+        
+    
+        var popup_cfb0e27eb8e77159c369c251e5e2bf50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c1b4ee644a86fc2247067434847f475 = $(`<div id="html_8c1b4ee644a86fc2247067434847f475" style="width: 100.0%; height: 100.0%;">Cluster 12 Cost: 831.41 units</div>`)[0];
+                popup_cfb0e27eb8e77159c369c251e5e2bf50.setContent(html_8c1b4ee644a86fc2247067434847f475);
+            
+        
+
+        marker_fd4260ebb06f985b5d31c8673356fd13.bindPopup(popup_cfb0e27eb8e77159c369c251e5e2bf50)
+        ;
+
+        
+    
+    
+            var marker_a5e961cdb3240adcef2ec49290b446e6 = L.marker(
+                [30.410043129239604, 76.7352486229847],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_5c90a5dcf0efefc9f73c4c48ab324ace = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a5e961cdb3240adcef2ec49290b446e6.setIcon(icon_5c90a5dcf0efefc9f73c4c48ab324ace);
+        
+    
+        var popup_b70f883bcfc84effa0cbf2d8481ba231 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbb856d08147b551afcbaf9bbc4c48fb = $(`<div id="html_bbb856d08147b551afcbaf9bbc4c48fb" style="width: 100.0%; height: 100.0%;">Stop in Cluster 13</div>`)[0];
+                popup_b70f883bcfc84effa0cbf2d8481ba231.setContent(html_bbb856d08147b551afcbaf9bbc4c48fb);
+            
+        
+
+        marker_a5e961cdb3240adcef2ec49290b446e6.bindPopup(popup_b70f883bcfc84effa0cbf2d8481ba231)
+        ;
+
+        
+    
+    
+            var marker_683b0a1f7faa3079249ee75a8fb67e8a = L.marker(
+                [30.41981253174148, 76.77448090869204],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_5fd0ac0cc133e3b783aad031b05e531f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_683b0a1f7faa3079249ee75a8fb67e8a.setIcon(icon_5fd0ac0cc133e3b783aad031b05e531f);
+        
+    
+        var popup_0555578a5465b1f4270b45c5d76b25d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74ffeff5ba706672c6319c12d5101493 = $(`<div id="html_74ffeff5ba706672c6319c12d5101493" style="width: 100.0%; height: 100.0%;">Stop in Cluster 13</div>`)[0];
+                popup_0555578a5465b1f4270b45c5d76b25d1.setContent(html_74ffeff5ba706672c6319c12d5101493);
+            
+        
+
+        marker_683b0a1f7faa3079249ee75a8fb67e8a.bindPopup(popup_0555578a5465b1f4270b45c5d76b25d1)
+        ;
+
+        
+    
+    
+            var marker_8440c92763bfabf6e188e8b03387ea15 = L.marker(
+                [30.395214185636238, 76.71828219801525],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_9daa9e7acb8627523289c23f3752ea1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8440c92763bfabf6e188e8b03387ea15.setIcon(icon_9daa9e7acb8627523289c23f3752ea1a);
+        
+    
+        var popup_9ad8c75822296502d4cac603a2be0706 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bd7fed2d21cf39d42cc263f70a0eef0 = $(`<div id="html_4bd7fed2d21cf39d42cc263f70a0eef0" style="width: 100.0%; height: 100.0%;">Stop in Cluster 13</div>`)[0];
+                popup_9ad8c75822296502d4cac603a2be0706.setContent(html_4bd7fed2d21cf39d42cc263f70a0eef0);
+            
+        
+
+        marker_8440c92763bfabf6e188e8b03387ea15.bindPopup(popup_9ad8c75822296502d4cac603a2be0706)
+        ;
+
+        
+    
+    
+            var poly_line_3bfbe7facb1388fdb5b54ee9fd6815a6 = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.395214185636238, 76.71828219801525], [30.410043129239604, 76.7352486229847], [30.41981253174148, 76.77448090869204]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_b6a4f5938104743bfb337c724b99a59e = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_a1dcbd35e6d8a70ea27d5608b75d1574 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b6a4f5938104743bfb337c724b99a59e.setIcon(icon_a1dcbd35e6d8a70ea27d5608b75d1574);
+        
+    
+        var popup_23f0d604bfedb34a90e769a82bd85763 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83be7c507e823f5691a751c0f9ba0e85 = $(`<div id="html_83be7c507e823f5691a751c0f9ba0e85" style="width: 100.0%; height: 100.0%;">Cluster 13 Cost: 361.65 units</div>`)[0];
+                popup_23f0d604bfedb34a90e769a82bd85763.setContent(html_83be7c507e823f5691a751c0f9ba0e85);
+            
+        
+
+        marker_b6a4f5938104743bfb337c724b99a59e.bindPopup(popup_23f0d604bfedb34a90e769a82bd85763)
+        ;
+
+        
+    
+    
+            var marker_7260f4d928e83096d5e74de60816c807 = L.marker(
+                [30.796374880421276, 76.69422814707362],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_d03ce3a3acd8072a68f8b7e0d1bc277b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_7260f4d928e83096d5e74de60816c807.setIcon(icon_d03ce3a3acd8072a68f8b7e0d1bc277b);
+        
+    
+        var popup_33910e9bb90394467962499d334ed714 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99bb7431b1f3e53b7170cc0c589d5ad0 = $(`<div id="html_99bb7431b1f3e53b7170cc0c589d5ad0" style="width: 100.0%; height: 100.0%;">Stop in Cluster 14</div>`)[0];
+                popup_33910e9bb90394467962499d334ed714.setContent(html_99bb7431b1f3e53b7170cc0c589d5ad0);
+            
+        
+
+        marker_7260f4d928e83096d5e74de60816c807.bindPopup(popup_33910e9bb90394467962499d334ed714)
+        ;
+
+        
+    
+    
+            var poly_line_bf3d8079d482f58c450af112b7e8b3de = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.796374880421276, 76.69422814707362]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_9c9484b7b7f285a02f0ef218e84ad218 = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_06303948d16ba25abea446d11942b20d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9c9484b7b7f285a02f0ef218e84ad218.setIcon(icon_06303948d16ba25abea446d11942b20d);
+        
+    
+        var popup_54452166ee0be740a2086060bad8d588 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5efef45d0d8274809b704043453c0326 = $(`<div id="html_5efef45d0d8274809b704043453c0326" style="width: 100.0%; height: 100.0%;">Cluster 14 Cost: 626.14 units</div>`)[0];
+                popup_54452166ee0be740a2086060bad8d588.setContent(html_5efef45d0d8274809b704043453c0326);
+            
+        
+
+        marker_9c9484b7b7f285a02f0ef218e84ad218.bindPopup(popup_54452166ee0be740a2086060bad8d588)
+        ;
+
+        
+    
+    
+            var marker_ccc6728b0ed611f8c58f36b7ba99a7b6 = L.marker(
+                [30.355241097342077, 76.36510851353623],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_5a557c184c557c503f6629ac282ab81a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ccc6728b0ed611f8c58f36b7ba99a7b6.setIcon(icon_5a557c184c557c503f6629ac282ab81a);
+        
+    
+        var popup_2ded88028ecdf04c7127698e71c0567d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58a48d12e2799615e7fb8f0cc6d97971 = $(`<div id="html_58a48d12e2799615e7fb8f0cc6d97971" style="width: 100.0%; height: 100.0%;">Stop in Cluster 15</div>`)[0];
+                popup_2ded88028ecdf04c7127698e71c0567d.setContent(html_58a48d12e2799615e7fb8f0cc6d97971);
+            
+        
+
+        marker_ccc6728b0ed611f8c58f36b7ba99a7b6.bindPopup(popup_2ded88028ecdf04c7127698e71c0567d)
+        ;
+
+        
+    
+    
+            var marker_b1bfbaafa6ee5c6485bacbee81ca65e5 = L.marker(
+                [30.3511352659672, 76.39897118829442],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_897767360b3d1a47c08c7108b4b9bae1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b1bfbaafa6ee5c6485bacbee81ca65e5.setIcon(icon_897767360b3d1a47c08c7108b4b9bae1);
+        
+    
+        var popup_9fa06f6e498c1b575c7c0c4acb96fe11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e86d333df4d753cfa5593ee63b3e60e8 = $(`<div id="html_e86d333df4d753cfa5593ee63b3e60e8" style="width: 100.0%; height: 100.0%;">Stop in Cluster 15</div>`)[0];
+                popup_9fa06f6e498c1b575c7c0c4acb96fe11.setContent(html_e86d333df4d753cfa5593ee63b3e60e8);
+            
+        
+
+        marker_b1bfbaafa6ee5c6485bacbee81ca65e5.bindPopup(popup_9fa06f6e498c1b575c7c0c4acb96fe11)
+        ;
+
+        
+    
+    
+            var marker_dc91bd0e3966d94322ead4c8c0c61a7e = L.marker(
+                [30.30459225436, 76.37818147654582],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_9bb3db0b1392c58884ef17d1898669ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dc91bd0e3966d94322ead4c8c0c61a7e.setIcon(icon_9bb3db0b1392c58884ef17d1898669ec);
+        
+    
+        var popup_c46dc1000a23d0acc57529a15fff6a43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_701b1bef26d575959ccc559476c230ec = $(`<div id="html_701b1bef26d575959ccc559476c230ec" style="width: 100.0%; height: 100.0%;">Stop in Cluster 15</div>`)[0];
+                popup_c46dc1000a23d0acc57529a15fff6a43.setContent(html_701b1bef26d575959ccc559476c230ec);
+            
+        
+
+        marker_dc91bd0e3966d94322ead4c8c0c61a7e.bindPopup(popup_c46dc1000a23d0acc57529a15fff6a43)
+        ;
+
+        
+    
+    
+            var poly_line_38b474ca9ef2513cdc7d4ca1eaddec54 = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.3511352659672, 76.39897118829442], [30.30459225436, 76.37818147654582], [30.355241097342077, 76.36510851353623]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_edb6ce14baefaf3f23aa39ee724fa481 = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_6adc2845413171e55a5b18fe8e0a8d90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_edb6ce14baefaf3f23aa39ee724fa481.setIcon(icon_6adc2845413171e55a5b18fe8e0a8d90);
+        
+    
+        var popup_e8757430172a63e4469970e800aee124 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5767c428bc3c74e12c156c4be36bc775 = $(`<div id="html_5767c428bc3c74e12c156c4be36bc775" style="width: 100.0%; height: 100.0%;">Cluster 15 Cost: 758.29 units</div>`)[0];
+                popup_e8757430172a63e4469970e800aee124.setContent(html_5767c428bc3c74e12c156c4be36bc775);
+            
+        
+
+        marker_edb6ce14baefaf3f23aa39ee724fa481.bindPopup(popup_e8757430172a63e4469970e800aee124)
+        ;
+
+        
+    
+    
+            var marker_f0e3ad938508dee70a92bf2b385f708c = L.marker(
+                [30.384373973674762, 76.56478598450894],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_d6104d92777005ab4d20e2bb4f4f9d67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f0e3ad938508dee70a92bf2b385f708c.setIcon(icon_d6104d92777005ab4d20e2bb4f4f9d67);
+        
+    
+        var popup_234df1dad8429606b5473ba090656874 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3fed8165014d06b39e8734071b14e18 = $(`<div id="html_c3fed8165014d06b39e8734071b14e18" style="width: 100.0%; height: 100.0%;">Stop in Cluster 16</div>`)[0];
+                popup_234df1dad8429606b5473ba090656874.setContent(html_c3fed8165014d06b39e8734071b14e18);
+            
+        
+
+        marker_f0e3ad938508dee70a92bf2b385f708c.bindPopup(popup_234df1dad8429606b5473ba090656874)
+        ;
+
+        
+    
+    
+            var marker_f9fa09f96fb4614bd854949672a47474 = L.marker(
+                [30.43146718778186, 76.48435980243794],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_348bc88629beaa51f91b54719f5a159a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f9fa09f96fb4614bd854949672a47474.setIcon(icon_348bc88629beaa51f91b54719f5a159a);
+        
+    
+        var popup_9aa717da7b5754536deb027f20310bbb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_351578f5fe86b8e77390dd7b4b6a191b = $(`<div id="html_351578f5fe86b8e77390dd7b4b6a191b" style="width: 100.0%; height: 100.0%;">Stop in Cluster 16</div>`)[0];
+                popup_9aa717da7b5754536deb027f20310bbb.setContent(html_351578f5fe86b8e77390dd7b4b6a191b);
+            
+        
+
+        marker_f9fa09f96fb4614bd854949672a47474.bindPopup(popup_9aa717da7b5754536deb027f20310bbb)
+        ;
+
+        
+    
+    
+            var marker_a3a54ebf042865d361a900156ee5bc64 = L.marker(
+                [30.3204776993822, 76.62074363924536],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_5579fd90d1d3de696bb714df61655842 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3a54ebf042865d361a900156ee5bc64.setIcon(icon_5579fd90d1d3de696bb714df61655842);
+        
+    
+        var popup_ef2c5744183de0b68f42eb801bf6c9c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd0b904aaa4f34838d4f59c01660b3a1 = $(`<div id="html_bd0b904aaa4f34838d4f59c01660b3a1" style="width: 100.0%; height: 100.0%;">Stop in Cluster 16</div>`)[0];
+                popup_ef2c5744183de0b68f42eb801bf6c9c3.setContent(html_bd0b904aaa4f34838d4f59c01660b3a1);
+            
+        
+
+        marker_a3a54ebf042865d361a900156ee5bc64.bindPopup(popup_ef2c5744183de0b68f42eb801bf6c9c3)
+        ;
+
+        
+    
+    
+            var poly_line_a2f610a3b69c3753a281beacad846894 = L.polyline(
+                [[30.516363782063365, 76.65999237672537], [30.3204776993822, 76.62074363924536], [30.384373973674762, 76.56478598450894], [30.43146718778186, 76.48435980243794]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var marker_580e7a65b21c5a9f0c841a7b70c67b98 = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_1010a7c905e0d71af369817cb0413f4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_580e7a65b21c5a9f0c841a7b70c67b98.setIcon(icon_1010a7c905e0d71af369817cb0413f4d);
+        
+    
+        var popup_6ccddbb9941bfae8a4b8d3659d3078d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00ce26950e262a549b24bb0608478532 = $(`<div id="html_00ce26950e262a549b24bb0608478532" style="width: 100.0%; height: 100.0%;">Cluster 16 Cost: 596.29 units</div>`)[0];
+                popup_6ccddbb9941bfae8a4b8d3659d3078d4.setContent(html_00ce26950e262a549b24bb0608478532);
+            
+        
+
+        marker_580e7a65b21c5a9f0c841a7b70c67b98.bindPopup(popup_6ccddbb9941bfae8a4b8d3659d3078d4)
+        ;
+
+        
+    
+    
+            var marker_5ff3f35e626c460cfbcbcecd48bc8698 = L.marker(
+                [30.516363782063365, 76.65999237672537],
+                {}
+            ).addTo(map_bd19a340a5a8855cca1e463487fd5338);
+        
+    
+            var icon_4c62ce4238cf30df794ef050ddbeab8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_5ff3f35e626c460cfbcbcecd48bc8698.setIcon(icon_4c62ce4238cf30df794ef050ddbeab8d);
+        
+    
+        var popup_1d720551759d355f8d50e3b0df82eb9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_922d8176795097c16fe6a5369250fa95 = $(`<div id="html_922d8176795097c16fe6a5369250fa95" style="width: 100.0%; height: 100.0%;">Total Distance: 981.41 km<br>Total Cost: 9814.14 units</div>`)[0];
+                popup_1d720551759d355f8d50e3b0df82eb9a.setContent(html_922d8176795097c16fe6a5369250fa95);
+            
+        
+
+        marker_5ff3f35e626c460cfbcbcecd48bc8698.bindPopup(popup_1d720551759d355f8d50e3b0df82eb9a)
+        ;
+
+        
+    
+</script>
+</html>
